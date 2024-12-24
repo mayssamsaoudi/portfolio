@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayssam Saoudi | Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #8a2be2, #ff66cc); /* Purple to Rose */
+            color: white;
+            padding: 50px 20px;
+        }
+
+        header .profile-img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #fff;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+        }
+
+        header h2 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+
+        header .btn {
+            background-color: white;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        header .btn:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 30px 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Experience Section */
+        .experience {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .experience-img {
+            width: 100px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #8a2be2, #ff66cc); /* Purple to Rose */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="mayssouma.jpg" alt="Mayssam Saoudi" class="profile-img">
+            <h1>Mayssam Saoudi</h1>
+            <h2>Digital Growth Architect | Expert Social Media Manager</h2>
+            <p>Welcome to my professional portfolio! I specialize in creating impactful, data-driven strategies to enhance brand visibility, foster audience engagement, and drive measurable growth across digital platforms.</p>
+            <a href="#about" class="btn">Learn More About Me</a>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h3>About Me</h3>
+        <p>As a social media manager, I will utilize various strategies to enhance brand visibility and engagement. I will leverage a strong hashtag strategy, using trending and niche hashtags to increase reach and improve discoverability. I will create visually engaging content such as carousels, banners, and infographics to capture attention and communicate key messages effectively. Actively engaging with the community is also a priority, responding to comments, sharing user-generated content, and participating in relevant conversations. I will stay on top of trends by utilizing trending challenges, memes, and themes to remain relevant. Additionally, I will build partnerships with influencers to extend brand reach. Repurposing high-performing content across various platforms will allow me to maximize its impact. I will also use user polls and surveys to gather feedback and foster interaction, and share behind-the-scenes content to create authenticity. Finally, showcasing customer testimonials and success stories will provide social proof to build credibility and trust. </p>
+        </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h3>My Experiences</h3>
+        <div class="experience">
+            <img src="piuma.png" alt="Piuma Academy" class="experience-img">
+            <div>
+                <h4>Piuma Academy</h4>
+                <p>I have experience managing the Piuma Academy social media page, focusing on promoting online math lessons. My role included writing and scheduling posts to announce upcoming lessons, responding promptly to messages and comments, and managing online groups to ensure active and productive engagement. I aimed to maintain a professional yet approachable tone to create a welcoming environment for learners. This role allowed me to enhance my skills in communication, organization, and social media management while supporting students in their educational Journey. </p>
+            </div>
+        </div>
+        <div class="experience">
+            <img src="classna.png" alt="Classna Hakka" class="experience-img">
+            <div>
+                <h4>كلاسنا هكا</h4>
+                <p>I also manage the كلاسنا هكا social media page, where I have been involved from the very beginning. I contributed to its development by designing the logo and establishing its online presence. My responsibilities include creating and curating content, engaging with the audience, and ensuring the page grows effectively while meeting its objectives.</p>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h3>Contact Me</h3>
+        <ul class="contact-info">
+            <li><strong>Email:</strong> <a href="mailto:mayssamsaoudi25@gmail.com">mayssamsaoudi25@gmail.com</a></li>
+            <li><strong>Phone:</strong> +216 28389085</li>
+            <li><a href="https://www.facebook.com/mayssam.saoudi" target="_blank">My Facebook</a></li>
+            <li><a href="https://www.instagram.com/mayssam_saoudi?igsh=MWFrZzh1aGVyN3R3aw==" target="_blank">My Instagram</a></li>
+        </ul>
+        <h5>My Portfolio as a Graphic Designer</h5>
+        <ul>
+            <li><a href="https://www.behance.net/saoudimayssam" target="_blank">My Behance</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Mayssam Saoudi. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth Scrolling for "Learn More About Me" Button
+        document.querySelector('.btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('#about').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
